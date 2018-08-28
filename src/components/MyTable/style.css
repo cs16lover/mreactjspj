@@ -1,0 +1,127 @@
+/* Overide */
+.react-bs-table{
+    background-color: white;
+}
+.react-bs-table tr th{
+    background-image: -webkit-linear-gradient(#f9f9f9,#e4e4e4);
+    background-image: -moz-linear-gradient(#f9f9f9,#e4e4e4);
+    background-image: -ms-linear-gradient(#f9f9f9,#e4e4e4);
+    background-image: -o-linear-gradient(#f9f9f9,#e4e4e4);
+    background-image: linear-gradient(#f9f9f9,#e4e4e4);
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fff9f9f9', endColorstr='#ffe4e4e4', GradientType=0);
+}
+.react-bs-table tr td{
+    padding: 0px;
+}
+
+/* Style Table */
+td.mtb-col-action>div {
+    display: flex;
+    flex-direction: row;
+    min-height:30px;
+}
+td.mtb-col-action>div>button {
+    border: 0px;
+    margin: 0px 2px;
+}
+td .mtb-col-ro {
+    padding: 5px;
+}
+
+/* Toolbar */
+.mtb-tb{
+    margin-bottom: 2px;
+}
+.mtb-tb .card-header{
+    padding: 5px;
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: row;
+}
+.mtb-tb .card-header > div{
+    display: flex;
+    flex-direction: row;
+}
+.mtb-tb .card-body{
+    padding: 5px;
+}
+
+.mtb-tb-rh{
+    margin-left: auto;
+    text-align: right;
+}
+
+.mtb-tb-btn {
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 5px;
+    color: #567190;
+    margin: 0 1px;
+}
+.mtb-tb-btn:hover {
+    border: 1px solid #aaa;
+    background-color: transparent;
+}
+.mtb-tb-btn:focus {
+    outline:0;
+}
+.mtb-tb-btn:active {
+    border: 1px solid #aaa;
+    background-color: #fff;
+}
+.mtb-tb-btn .active{
+    border: 1px solid #aaa;
+    background-color: #fff;
+}
+.mtb-tb-break{
+    background-image: -webkit-linear-gradient(top,rgba(153,153,153,.1) 0,#999 40%,#999 60%,rgba(153,153,153,.1) 100%);
+    background-image: -moz-linear-gradient(top,rgba(153,153,153,.1) 0,#999 40%,#999 60%,rgba(153,153,153,.1) 100%);
+    background-image: -ms-linear-gradient(top,rgba(153,153,153,.1) 0,#999 40%,#999 60%,rgba(153,153,153,.1) 100%);
+    background-image: -o-linear-gradient(top,rgba(153,153,153,.1) 0,#999 40%,#999 60%,rgba(153,153,153,.1) 100%);
+    background-image: linear-gradient(top,rgba(153,153,153,.1) 0,#999 40%,#999 60%,rgba(153,153,153,.1) 100%);
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff999999', endColorstr='#ff999999', GradientType=0);
+    width: 1px!important;
+    height: 32px;
+    padding: 0;
+    margin: 0 6px;
+}
+
+.btn-addnew{
+    width: auto;
+    height: 32px;
+    /* padding: 2px; */
+    padding: 2px 5px;
+}
+
+.mtb-tb-s{
+    border: 1px solid #c8ced3;
+    background-color: #fff;
+    width: 160px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    padding-right: 5px;
+}
+
+.mtb-tb-s input{
+    /* border: 0px; */
+    /* width: 100px; */
+    flex: 1;
+    width: 100px;
+    background-color: transparent;
+    border: 0px;
+}
+.mtb-tb-s input:focus {
+    outline:0;
+}
+.mtb-tb-s-btn {
+    background-color: transparent;
+    border: 0px;
+    color: #567190;
+}
+.mtb-tb-s-btn:focus {
+    outline:0;
+}
+

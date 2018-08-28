@@ -1,0 +1,64 @@
+@import '../theme/colors.less';
+@__buttonPrefixCls: m-button;
+// @brand-primary:         #498EE6; 
+// @normal-alpha-2:            rgba(31, 56, 88, 0.8); // N-2 A80 
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.@{__buttonPrefixCls} {
+  > icon {
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+}
+
+.@{__buttonPrefixCls}-loading {
+  position: relative;
+}
+
+.@{__buttonPrefixCls}-loading-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  animation: rotation linear 2s;
+  animation-iteration-count: infinite;
+  vertical-align: middle;
+  fill: white;
+}
+
+.@{__buttonPrefixCls}-outline {
+  .@{__buttonPrefixCls}-loading-icon {
+    fill: @brand-primary;
+  }
+}
+.@{__buttonPrefixCls}-secondary {
+  .@{__buttonPrefixCls}-loading-icon {
+    fill: @normal-alpha-2;
+  }
+}
+
+.@{__buttonPrefixCls}-lg {
+  .@{__buttonPrefixCls}-loading-icon {
+    width: 20px;
+    height: 20px;
+  }
+  > icon {
+    font-size: 20px;
+  }
+}
+.@{__buttonPrefixCls}-sm {
+  .@{__buttonPrefixCls}-loading-icon {
+    width: 14px;
+    height: 14px;
+  }
+  > icon {
+    font-size: 14px;
+  }
+}
