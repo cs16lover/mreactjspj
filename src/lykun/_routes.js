@@ -17,10 +17,16 @@ const Dashboard = Loadable({
   loading: Loading,
 });
 
+const Mindmap = Loadable({
+  loader: () => import('./views/Mindmap'),
+  loading: Loading,
+});
+
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
   // { path: '/', name: 'Home', component: DefaultLayout, exact: true },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
+  { path: '/mindmap', name: 'Mindmap', component: Mindmap },
   { path: '/category-list', name: 'CategoryList', component: _CategoryList },
   // { path: '/department', name: 'Department', component: _Category },
 ];

@@ -1,5 +1,4 @@
-import { __assign } from "../../node_modules/tslib";
-
+import G from './G';
 const Auth = {
   Config: {
     keyAuthLocal: 'AUTH_ACCESS_TOKEN_KEY',
@@ -71,6 +70,9 @@ const Auth = {
     //Update Service with new token
 
     Auth.saveToLocal();
+
+    //go to home
+    G.goToHome();
   },
   loginWithFirebase(result){
     console.log('loginWithFirebase:',result);

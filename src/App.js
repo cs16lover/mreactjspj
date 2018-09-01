@@ -32,7 +32,14 @@ import { DefaultLayout, Login } from './lykun/containers';
 import Config_Lykun from './lykun/_config';
 const Config = Config_Lykun;
 //Init From Config
-// H.F.initWithConfig(Config.Firebase);// Firebase
+try {
+  let _configFB = JSON.parse(H.M.xorCrypt(Config.FireBaseEncrypt,Config.EncryptKeyXor));
+  console.warn("_configFB:",_configFB);
+  H.F.initWithConfig(_configFB);// Firebase
+} catch (error) {
+  console.warn("Parse json error:",error,Config);
+}
+
 ApiAxios.initWithConfig(Config.Api);
 H.Auth.initWithConfig(Config.Auth);
 

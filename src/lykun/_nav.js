@@ -9,18 +9,8 @@ const ItemsCoreUI = [
     },
   },
   {
-    name: 'Department',
-    url: '/department',
-    icon: 'icon-speedometer',
-  },
-  {
-    name: 'Job Title',
-    url: '/job-title',
-    icon: 'icon-speedometer',
-  },
-  {
-    name: 'Blank',
-    url: '/blank',
+    name: 'Mindmap',
+    url: '/mindmap',
     icon: 'icon-speedometer',
   },
 ];
